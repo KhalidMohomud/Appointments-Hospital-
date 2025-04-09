@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+
+:root {
+    --primary: #1E4D75;
+    --primary-light: #2A5D8A;
+    --primary-dark: #153A5E;
+    --secondary: #2ECC71;
+    --secondary-light: #3BE381;
+    --secondary-dark: #25B562;
+    --highlight: #1ABC9C;
+    --highlight-light: #20D9B6;
+    --highlight-dark: #16A085;
+    --alert: #E74C3C;
+    --alert-light: #FF5E4D;
+    --alert-dark: #C0392B;
+    --textlight: #BDC3C7;
+    --textdark: #7F8C8D;
+    --bg: #FFFFFF;
+    --card: #FFFFFF;
+    --text: #2D3748;
+    --border: #E2E8F0;
+}
+
+
+.dark {
+    --bg: #121F2D;
+     --card: #1A2A3A;
+     --text: #FFFFFF;
+     --border: #2D3748;
+ }     
+ 
+ .bg-primary { background-color: var(--primary); }
+ .bg-primary-light { background-color: var(--primary-light); }
+ .bg-primary-dark { background-color: var(--primary-dark); }
+ .bg-secondary { background-color: var(--secondary); }
+ .bg-secondary-light { background-color: var(--secondary-light); }
+ .bg-secondary-dark { background-color: var(--secondary-dark); }
+ .bg-highlight { background-color: var(--highlight); }
+ .bg-highlight-light { background-color: var(--highlight-light); }
+ .bg-highlight-dark { background-color: var(--highlight-dark); }
+ .bg-alert { background-color: var(--alert); }
+ .bg-alert-light { background-color: var(--alert-light); }
+ .bg-alert-dark { background-color: var(--alert-dark); }
+
+ .text-primary { color: var(--primary); }
+ .text-secondary { color: var(--secondary); }
+ .text-highlight { color: var(--highlight); }
+ .text-alert { color: var(--alert); }
+ .bg-body { background-color: var(--bg); }
+ .bg-card { background-color: var(--card); }
+ .text-body { color: var(--text); }
+ .border-custom { border-color: var(--border); }
+
+
+ @keyframes slideUp {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.7s ease-out;
+  }  
+  
